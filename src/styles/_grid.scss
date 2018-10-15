@@ -1,0 +1,30 @@
+.grid {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  &__col {
+    flex: 1 0 auto;
+
+    &--12 {
+      flex-grow: 12;
+    }
+    &--9 {
+      flex-grow: 9;
+    }
+    &--8 {
+      flex-grow: 8;
+    }
+    &--6 {
+      flex-grow: 6;
+    }
+    &--4 {
+      flex-grow: 4;
+    }
+    &--3 {
+      flex-grow: 3;
+    }
+  }
+}

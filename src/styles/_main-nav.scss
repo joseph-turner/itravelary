@@ -1,0 +1,26 @@
+// Nav
+
+.main-nav {
+  margin-bottom: 30px;
+  padding: 15px 0 20px;
+  background: #333333;
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 12px;
+  }
+  &__link {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+
+    &--active {
+      border-bottom-color: #fff;
+    }
+  }
+}
