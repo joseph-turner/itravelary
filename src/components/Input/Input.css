@@ -1,0 +1,15 @@
+.form__group {
+  display: block;
+}
+
+.form__group__label {
+  display: block;
+}
+
+.form__group--input {
+  display: block;
+}
+
+.form__group__input {
+  display: block;
+}

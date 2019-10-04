@@ -18,8 +18,8 @@ function action() {
     chunks: ['contact'],
     title,
     component: (
-      <Layout>
-        <Contact title={title} />
+      <Layout pageTitle={title}>
+        <Contact />
       </Layout>
     ),
   };

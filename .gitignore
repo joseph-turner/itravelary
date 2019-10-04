@@ -5,6 +5,7 @@ node_modules/
 
 # Compiled output
 build
+flow-typed
 
 # Runtime data
 database.sqlite

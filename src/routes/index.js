@@ -24,6 +24,18 @@ const routes = {
       load: () => import(/* webpackChunkName: 'contact' */ './contact'),
     },
     {
+      path: '/trips',
+      load: () => import(/* webpackChunkName: 'trips' */ './trips'),
+    },
+    {
+      path: '/trips/new',
+      load: () => import(/* webpackChunkName: 'trips' */ './new-trip'),
+    },
+    {
+      path: '/trips/:id',
+      load: () => import(/* webpackChunkName: 'trips' */ './trip'),
+    },
+    {
       path: '/login',
       load: () => import(/* webpackChunkName: 'login' */ './login'),
     },
@@ -56,7 +68,7 @@ const routes = {
     const route = await next();
 
     // Provide default values for title, description etc.
-    route.title = `${route.title || 'Untitled Page'} - www.reactstarterkit.com`;
+    route.title = `${route.title || 'Untitled Page'} - Trip Kit`;
     route.description = route.description || '';
 
     return route;
